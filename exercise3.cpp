@@ -16,4 +16,37 @@ int main() {
         printf("%d\n", count);
         count += 2;
     }
+    printf("\n");
+    // count to 100 by tens using for loop
+    for (int i = 0; i <= 100; i+=10){
+        printf("%d\n", i);
+    }
+    // print the multiplication table using nested loop
+
+    for (int i = 0; i <= 10; i++){
+        for (int j = 0; j < 10; j++){
+            printf("%d x %d = %d\t", i, j, (i*j));
+            
+        }
+        printf("\n");
+    }
+
+    printf("\n");
+
+    int ages[] = {20, 22, 18, 35, 48, 26, 87, 70};
+    int lengthAges = (sizeof(ages) / sizeof(ages[0]));
+    int sum = 0;
+    int lowest = 99;
+    for (int i = 0; i < lengthAges; i++){
+        sum += ages[i];
+
+        if (ages[i] < lowest){
+            lowest = ages[i];
+        }
+    }
+    printf("Average age: %.2f\n", float(sum)/float(lengthAges));
+    printf("Lowest age: %d\n", lowest);
+
+
+
 }
