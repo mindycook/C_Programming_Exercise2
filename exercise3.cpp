@@ -47,6 +47,7 @@ int main() {
     printf("Average age: %.2f\n", float(sum)/float(lengthAges));
     printf("Lowest age: %d\n", lowest);
 
-
+    printf("==================\n");
+    
 
 }
