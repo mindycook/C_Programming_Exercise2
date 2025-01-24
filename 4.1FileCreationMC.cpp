@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main(){
-
+//4.1
 FILE *fptr;
 
 // Open a file in writing mode
@@ -21,6 +21,10 @@ else{
 fprintf(fptr, "Hello,\nHow are you?\nMy name is ...\nWhat's your name?\n");
 // Close the file
 fclose(fptr);
+
+
+
+//4.2
 
 // Open a file in reading mode
 fptr = fopen("hello.txt", "r");
